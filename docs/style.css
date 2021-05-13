@@ -46,6 +46,15 @@ h1, h2 {
   opacity: 0.75;
 }
 
+.studio-circle{
+  background-image: url();  /* 表示する画像 */
+    width:  180px;       /* ※縦横を同値に */
+    height: 180px;       /* ※縦横を同値に */
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: left top;  /* 横長画像の左上を基準に表示 */
+    display: inline-block;          /* 複数の画像を横に並べたい場合 */
+}
+
 .text{
   display:inline-block;
   margin:20px;
@@ -54,7 +63,7 @@ h1, h2 {
    font-weight: bold;
    color: rgba(0,0,0,0); 
    font-family:'SF Pro', 'Trebuchet MS';
-   background: url(https://industrial-art.sd.tmu.ac.jp/images/studio-images/baba2.png) center;
+   background: url("https://industrial-art.sd.tmu.ac.jp/images/studio-images/baba2.png") center;
    -webkit-background-clip: text;
 }
 

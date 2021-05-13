@@ -3,7 +3,7 @@ const id = '1BpGnuwC4lZf9G2yFyiSrxbJuGO8gviV8mr-I2D3x4vA';
 const sheet = 'Studio';
 const endpoint = `${uri}?id=${id}&sheet=${sheet}`;
 
-let img = ["https://industrial-art.sd.tmu.ac.jp/images/studio-images/ed1.png"];
+let img = [];
 let count = -1; //*2
 
 
@@ -27,17 +27,27 @@ const renderJson = (json) => {
     studios.forEach(studio => {
         img.push(studio['photo1']);
         img.push(studio['photo2']);
+
+        //const studioPreview = document.createElement('div');
+
         //console.log(studio['photo1']);
-        /*const studioDiv = document.createElement('div');
+        const studioDiv = document.createElement('div');
         const studioTitle = document.createElement("span");
         studioTitle.className = 'studio-title';
         studioTitle.textContent = studio['name-ja'];
         const studioTitleEn = document.createElement("span");
         studioTitleEn.className = 'studio-title-en';
         studioTitleEn.textContent = studio['name-en'];
+        const studioPreImg = document.createElement("img");
+        studioPreImg.className = 'studio-circle';
+        studioPreImg.id = 'studio-circleImg';
+        studioPreImg.src = studio['photo1']; // 画像パス
+        studioPreImg.alt = studio['name-ja']; // 代替テキスト
+        studioDiv.appendChild(studioPreImg);
         studioDiv.appendChild(studioTitle);
         studioDiv.appendChild(studioTitleEn);
-        document.getElementById('studios').appendChild(studioDiv);*/
+        document.getElementById('studios').appendChild(studioDiv);
+        document.getElementById("studio-circleImg").style.backgroundImage = "url(studio['name-ja'])";
     });
     document.getElementById('result').textContent = JSON.stringify(json, null, 2);
 }
