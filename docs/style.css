@@ -19,3 +19,13 @@ h1, h2 {
   font-weight: 100;
   opacity: 0.75;
 }
+
+.text{
+  margin:20px;
+   line-height: 1.1;
+   font-size: 3.5em;
+   font-weight: bold;
+   color: rgba(0,0,0,0); 
+   background: url(https://f.uploader.xzy.pw/eu-prd/upload/20191108160539_6f73696931.jpg) center;
+   -webkit-background-clip: text;
+}
