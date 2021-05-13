@@ -4,18 +4,18 @@ const sheet = 'Studio';
 const endpoint = `${uri}?id=${id}&sheet=${sheet}`;
 
 let img = [];
-let count = -1; //*2
+let count = -1;
 
 //参考文献 http://www.shurey.com/js/samples/3_img8.html
 function imgTimer() {
     //画像番号
-    count++; //*3
+    count++;
     //画像の枚数確認
-    if (count == img.length) count = 0; //*4
+    if (count == img.length) count = 0;
     //画像出力
     document.getElementById("mask_img").style.backgroundImage = "url(" + img[count] + ")";
     //次のタイマー呼びだし
-    setTimeout("imgTimer()", 2000); //*6
+    setTimeout("imgTimer()", 2000);
 }
 
 
@@ -33,26 +33,19 @@ const renderJson = (json) => {
 
         const studioPreview = document.createElement('div');
         studioPreview.className = 'prevImg-wrapper';
-        /*const studioDiv = document.createElement('div');
-        const studioTitle = document.createElement("span");
-        studioTitle.className = 'studio-title';
-        studioTitle.textContent = studio['name-ja'];
-        const studioTitleEn = document.createElement("span");
-        studioTitleEn.className = 'studio-title-en';
-        studioTitleEn.textContent = studio['name-en'];*/
         const studioPreImg = document.createElement("img");
-        //studioPreImg.className = 'studio-circle';
         studioPreImg.id = 'studios-circleImg';
-        studioPreImg.src = studio['photo1']; // 画像パス
-        studioPreImg.alt = studio['name-ja']; // 代替テキスト
+        studioPreImg.src = studio['photo1'];
+        studioPreImg.alt = studio['name-ja'];
+        const studioTitle = document.createElement("span");
+        studioTitle.className = 'studios-name';
+        studioTitle.textContent = studio['name-ja'];
         studioPreview.appendChild(studioPreImg);
-        //studioDiv.appendChild(studioPreImg);
-        //studioDiv.appendChild(studioTitle);
-        //studioDiv.appendChild(studioTitleEn);
+        studioPreview.appendChild(studioTitle);
         document.getElementById('studios').appendChild(studioPreview);
         document.getElementById("studios-circleImg").style.backgroundImage = "url(studio['name-ja'])";
     });
-    //document.getElementById('result').textContent = JSON.stringify(json, null, 2);
+
 }
 
 const getData = async () => {

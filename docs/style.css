@@ -17,21 +17,24 @@ header li{
   list-style: none;
   padding:20px;
 }
+header li:hover{
+  color:#A0A0A0;
+}
 
+/*参考文献　https://www.esz.co.jp/blog/2792.html*/
 .mask_text{
   display:inline-block;
   margin:20px;
-   line-height: 1.1;
-   font-size: 900px;
-   font-weight: bold;
-   color: rgba(0,0,0,0); 
-   font-family:'SF Pro', 'Trebuchet MS';
-   background: url("https://industrial-art.sd.tmu.ac.jp/images/studio-images/baba2.png") center;
-   -webkit-background-clip: text;
-   vertical-align: middle;
-   margin-left:70px;
-   margin-top:-150px;
-   margin-bottom:-50px;
+  line-height: 1.1;
+  font-size: 900px;
+  font-weight: bold;
+  color: rgba(0,0,0,0); 
+  background: url("https://industrial-art.sd.tmu.ac.jp/images/studio-images/baba2.png") center;
+  -webkit-background-clip: text;
+  vertical-align: middle;
+  margin-left:70px;
+  margin-top:-150px;
+  margin-bottom:-50px;
 }
 
 .title{
@@ -43,16 +46,9 @@ header li{
   margin-right:70px;
 }
 
-/*#studios > div {
-  margin: 1em 0;
-  padding: 0.5em;
-  background: #f8f8f8;
-  min-height: 3em;
-}*/
-
 .studios_wrapper{
   text-align: center;
-  margin-bottom:100px;
+  margin-bottom:80px;
 }
 
 #studios{
@@ -60,7 +56,7 @@ header li{
   display:inline-block;
   margin-left: auto;
   margin-right: auto;
-  width:80%;
+  width:90%;
 }
 
 .studios_title{
@@ -75,31 +71,38 @@ header li{
 }
 
 .prevImg-wrapper{
-  display: inline;
+  display: inline-block;
   text-align:center;
-  width:150px;
-  height:150px;
+  width:180px;
+  height:250px;
+  margin:0px 15px;
+  vertical-align: top;
 }
 
-/*.studio-title {
-  font-weight: bold;
+.studios-name{
+  text-align:center;
+  font-size: 12px;
+  display:block;
+  font-weight:700;
 }
-.studio-title-en {
-  margin-left: 1em;
-  font-weight: 100;
-  opacity: 0.75;
-}*/
 
+.studios-name:hover{
+  color:#A0A0A0;
+}
+
+/*参考文献　https://www.nishishi.com/css/trim-image-to-circle.html*/
 #studios-circleImg{
   background-image: url();  /* 表示する画像 */
-  width:  150px;       /* ※縦横を同値に */
-  height: 150px;       /* ※縦横を同値に */
+  width:  180px;       /* ※縦横を同値に */
+  height: 180px;       /* ※縦横を同値に */
   border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
   background-position: left top;  /* 横長画像の左上を基準に表示 */
-  display: inline-block;          /* 複数の画像を横に並べたい場合 */
+  /*display: inline-block; */         /* 複数の画像を横に並べたい場合 */
   padding:5px 10px;
+  text-align: center;
 }
 
 footer{
   text-align:center;
+  font-size: 10px;
 }
