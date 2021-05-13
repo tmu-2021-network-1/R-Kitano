@@ -1,12 +1,11 @@
 body {
-  /*font-family: sans-serif;*/
   font-family:'SF Pro', 'Trebuchet MS',sans-serif;
 }
 
 .header_wrapper{
   text-align: right;
   font-weight:bold;
-  font-size:20px;
+  font-size:25px;
   margin-right:30px;
 }
 
@@ -19,52 +18,86 @@ header li{
   padding:20px;
 }
 
+.mask_text{
+  display:inline-block;
+  margin:20px;
+   line-height: 1.1;
+   font-size: 900px;
+   font-weight: bold;
+   color: rgba(0,0,0,0); 
+   font-family:'SF Pro', 'Trebuchet MS';
+   background: url("https://industrial-art.sd.tmu.ac.jp/images/studio-images/baba2.png") center;
+   -webkit-background-clip: text;
+   vertical-align: middle;
+   margin-left:70px;
+   margin-top:-150px;
+   margin-bottom:-50px;
+}
+
 .title{
-  font-family:'SF Pro', 'Trebuchet MS';
   font-size: 30px;
   display:inline-block;
   font-weight:bold;
+  float:right;
+  margin-top:300px;
+  margin-right:70px;
 }
 
-h1, h2 {
-  font-weight: 400;
-  color: steelblue;
-}
-
-#studios > div {
+/*#studios > div {
   margin: 1em 0;
   padding: 0.5em;
   background: #f8f8f8;
   min-height: 3em;
+}*/
+
+.studios_wrapper{
+  text-align: center;
+  margin-bottom:100px;
 }
-.studio-title {
+
+#studios{
+  text-align: center;
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+}
+
+.studios_title{
+  text-align:center;
+  display:inline-block;
+  font-weight: bold;
+  font-size:40px;
+  width:100%;
+}
+.studioPreview_wrapper{
+  text-align:center;
+}
+
+.prevImg-wrapper{
+  display: inline;
+  text-align:center;
+  width:150px;
+  height:150px;
+}
+
+/*.studio-title {
   font-weight: bold;
 }
 .studio-title-en {
   margin-left: 1em;
   font-weight: 100;
   opacity: 0.75;
-}
+}*/
 
-.studio-circle{
+#studios-circleImg{
   background-image: url();  /* 表示する画像 */
-    width:  180px;       /* ※縦横を同値に */
-    height: 180px;       /* ※縦横を同値に */
-    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-    background-position: left top;  /* 横長画像の左上を基準に表示 */
-    display: inline-block;          /* 複数の画像を横に並べたい場合 */
-}
-
-.text{
-  display:inline-block;
-  margin:20px;
-   line-height: 1.1;
-   font-size: 800px;
-   font-weight: bold;
-   color: rgba(0,0,0,0); 
-   font-family:'SF Pro', 'Trebuchet MS';
-   background: url("https://industrial-art.sd.tmu.ac.jp/images/studio-images/baba2.png") center;
-   -webkit-background-clip: text;
+  width:  150px;       /* ※縦横を同値に */
+  height: 150px;       /* ※縦横を同値に */
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  background-position: left top;  /* 横長画像の左上を基準に表示 */
+  display: inline-block;          /* 複数の画像を横に並べたい場合 */
+  padding:5px 10px;
 }
 
 footer{
