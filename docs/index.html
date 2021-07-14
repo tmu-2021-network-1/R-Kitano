@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ambiguity</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--境界線-->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="lines-svg">
+        <path d="M 720,0 L 720,900 z" stroke="black" stroke-width="80" id="path1" />
+        <path d="M -20,100 L 1470,800 z" stroke="black" stroke-width="80" id="path2" />
+        <path d="M 1100,-30 L 400,930 z" stroke="black" stroke-width="80" id="path3" />
+        <path d="M 250,920 L 500,-20 z" stroke="black" stroke-width="80" id="path4" />
+        <path d="M 850,-20 L 1300,920 z" stroke="black" stroke-width="80" id="path5" />
+        <path d="M 1460,100 L -20,300 z" stroke="black" stroke-width="80" id="path6" />
+        <path d="M -10,600 L 1450,750 z" stroke="black" stroke-width="80" id="path7" />
+        <path d="M 1400,920 L 1250,-20 z" stroke="black" stroke-width="80" id="path8" />
+        <path d="M 100,-20 L 550,920 z" stroke="black" stroke-width="80" id="path9" />
+        <path d="M 1460,300 L -20,850 z" stroke="black" stroke-width="80" id="path10" />
+        <path d="M 250,-30 L 1100,930 z" stroke="black" stroke-width="80" id="path11" />
+        <path d="M -10,450 L 1450,450 z" stroke="black" stroke-width="80" id="path12" />
+        <path d="M 1470,600 L 900,930 z" stroke="black" stroke-width="80" id="path13" />
+        <path d="M -30,400 L 900,930 z" stroke="black" stroke-width="80" id="path14" />
+        <path d="M 1460,50 L 50,930 z" stroke="black" stroke-width="80" id="path15" />
+        <path d="M 400,-40 L 1440,600 z" stroke="black" stroke-width="80" id="path16" />
+        <path d="M 350,930 L 0,0 z" stroke="black" stroke-width="80" id="path17" />
+        <path d="M 1400,-30 L 600,930 z" stroke="black" stroke-width="80" id="path18" />
+        <path d="M 150,-20 L 950,920 z" stroke="black" stroke-width="80" id="path19" />
+        <path d="M 900,920 L 1150,-20 z" stroke="black" stroke-width="80" id="path20" />
+        <path d="M 800,-20 L -30,750 z" stroke="black" stroke-width="80" id="path21" />
+        <path d="M 1460,150 L 1150,920 z" stroke="black" stroke-width="80" id="path22" />
+        <path d="M 1460,200 L -20,750 z" stroke="black" stroke-width="80" id="path23" />
+        <path d="M -10,350 L 1450,600 z" stroke="black" stroke-width="80" id="path24" />
+        <path d="M 650,-10 L 500,910 z" stroke="black" stroke-width="80" id="path25" />
+        <path d="M 0,50 L 1440,200 z" stroke="black" stroke-width="80" id="path26" />
+        <path d="M -20,600 L 1050,-40 z" stroke="black" stroke-width="80" id="path27" />
+        <path d="M 1440,870 L 0,750 z" stroke="black" stroke-width="80" id="path28" />
+        <path d="M -10,200 L 1450,400 z" stroke="black" stroke-width="80" id="path29" />
+        <path d="M 1200,0 L 1200,900 z" stroke="black" stroke-width="80" id="path30" />
+        <path d="M 1440,500 L 0,500 z" stroke="black" stroke-width="80" id="path31" />
+        <path d="M 650,0 L 650,900 z" stroke="black" stroke-width="80" id="path32" />
+        <path d="M 0,25 L 1440,25 z" stroke="black" stroke-width="80" id="path33" />
+        <path d="M 1440,800 L 0,800 z" stroke="black" stroke-width="80" id="path34" />
+        <path d="M 1000,0 L 1000,900 z" stroke="black" stroke-width="80" id="path35" />
+        <path d="M 1440,875 L 0,875 z" stroke="black" stroke-width="80" id="path36" />
+        <path d="M 800,0 L 800,900 z" stroke="black" stroke-width="80" id="path37" />
+        <path d="M 0,100 L 1440,100 z" stroke="black" stroke-width="80" id="path38" />
+        <path d="M 1440,300 L 0,300 z" stroke="black" stroke-width="80" id="path39" />
+        <path d="M 0,700 L 1440,700 z" stroke="black" stroke-width="80" id="path40" />
+        <path d="M 0,600 L 1440,600 z" stroke="black" stroke-width="80" id="path41" />
+        <path d="M 0,650 L 1440,650 z" stroke="black" stroke-width="80" id="path42" />
+        <path d="M 0,750 L 1440,750 z" stroke="black" stroke-width="80" id="path43" />
+        <path d="M 0,250 L 1440,250 z" stroke="black" stroke-width="80" id="path44" />
+        <path d="M 0,150 L 1440,150 z" stroke="black" stroke-width="80" id="path45" />
+        <path d="M 0,200 L 1440,200 z" stroke="black" stroke-width="80" id="path46" />
+        <path d="M 0,350 L 1440,350 z" stroke="black" stroke-width="80" id="path47" />
+        <path d="M 0,400 L 1440,400 z" stroke="black" stroke-width="80" id="path48" />
+        <path d="M 0,550 L 1440,550 z" stroke="black" stroke-width="80" id="path49" />
+        <path d="M 0,800 L 1440,800 z" stroke="black" stroke-width="80" id="path50" />
+    </svg>
+
+    <div id="canvas-wrap">
+        <canvas id="canvas-container">
+        </canvas>
+    </div>
+
+    <div id="title-wrap">
+        <h1 id="title"><span>Am</span>biguity</h1>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./particles.js"></script>
+</body>
+
+</html>
